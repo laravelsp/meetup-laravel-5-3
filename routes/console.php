@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Foundation\Inspiring;
+use Gmsantos\Inspiring;
 
 /*
 |--------------------------------------------------------------------------

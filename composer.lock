@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ed505f794cc52c9b7a35ed0b2faccac0",
-    "content-hash": "7e0e05e84f3eb333685719e2006b48a7",
+    "hash": "7f8c733a16757144e4bbcb8fd5139588",
+    "content-hash": "724458469ea02fe095ff8c3614c3ed2e",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -160,6 +160,51 @@
                 "string"
             ],
             "time": "2015-11-06 14:35:42"
+        },
+        {
+            "name": "gmsantos/inspiring",
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gmsantos/inspiring.git",
+                "reference": "d08cc5d8ba481e8dc4b7d9fd19717f282ea1cb1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gmsantos/inspiring/zipball/d08cc5d8ba481e8dc4b7d9fd19717f282ea1cb1a",
+                "reference": "d08cc5d8ba481e8dc4b7d9fd19717f282ea1cb1a",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4 || ^5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gmsantos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gmsantos",
+                    "email": "gabriel.ms1@hotmail.com"
+                }
+            ],
+            "description": "Alternative inspiring quotes for Laravel 5",
+            "keywords": [
+                "console",
+                "laravel",
+                "package"
+            ],
+            "time": "2016-10-18 01:03:39"
         },
         {
             "name": "jakub-onderka/php-console-color",
