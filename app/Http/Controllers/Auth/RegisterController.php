@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Meetup\Http\Controllers\Auth;
 
-use App\User;
+use Meetup\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use Meetup\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller

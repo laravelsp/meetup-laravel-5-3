@@ -172,11 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        Meetup\Providers\AppServiceProvider::class,
+        Meetup\Providers\AuthServiceProvider::class,
+        // Meetup\Providers\BroadcastServiceProvider::class,
+        Meetup\Providers\EventServiceProvider::class,
+        Meetup\Providers\RouteServiceProvider::class,
 
     ],
 
