@@ -21,6 +21,14 @@ Route::get('/users', function (Request $request) {
     return Meetup\User::all();
 });
 
+Route::get('/send_email', function(Request $request) {
+    Mail::to('batata@gmail.com')->send(
+        new Meetup\Mail\YourReminder
+    );
+
+    return 'Email enviado';
+});
+
 Route::get('/send_notification', function (Request $request) {
     Meetup\User::first()->notify(
         new Meetup\Notifications\SendInspiration()
