@@ -20,3 +20,11 @@ Route::get('/user', function (Request $request) {
 Route::get('/users', function (Request $request) {
     return Meetup\User::all();
 });
+
+Route::get('/send_notification', function (Request $request) {
+    Meetup\User::first()->notify(
+        new Meetup\Notifications\SendInspiration()
+    );
+
+    return 'Notificação enviada';
+});

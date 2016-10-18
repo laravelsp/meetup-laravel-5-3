@@ -29,6 +29,6 @@ class YourReminder extends Mailable
     public function build()
     {
         return $this->from('example@example.com')
-            ->view('view.name');
+            ->view('emails.teste');
     }
 }
