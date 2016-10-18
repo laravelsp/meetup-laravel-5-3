@@ -17,7 +17,7 @@ $factory->define(Meetup\User::class, function (Faker\Generator $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
-        'password' => $password ?: $password = bcrypt('secret'),
+        'password' => $password ?: $password = bcrypt('batata'),
         'remember_token' => str_random(10),
     ];
 });
