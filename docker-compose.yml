@@ -36,16 +36,10 @@ services:
       - .:/var/www/app
     ports:
       - "80:8080"
-    links:
-      - mysql
-      - cache
 
   queue:
     image: ambientum/php:7.0
     container_name: meetup-queue
-    command: php artisan queue:listen
+    command: php artisan queue:work
     volumes:
       - .:/var/www/app
-    links:
-      - mysql
-      - cache
